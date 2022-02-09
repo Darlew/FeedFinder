@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvmgQh0dqgD2h5M2f0xnnDDidChOcbV8Q&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar" class="nav">
+      <h1 id="title">Feed Finder</h1>
+      <ul class="nav-links">
+        <li>
+          <a href="#submit-deal">Submit a Deal</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="main-area">
+      <div id="pub-list-area" class="pub-list">
+        <div id="day-selector">
+          <h4 id="day-of-week">Today's Deals</h4>
+        </div>
+        <div id="pub-listing">
+          <div id="name-and-deal-area">
+            <h5 id="name">The Kent</h5>
+            <div id="meal-and-price">
+              <p id="price">$12</p>
+              <p id="meal">Schnitzel</p>
+            </div>
+          </div>
+          <p id="address">59 Beaumont St, Hamilton NSW 2303</p>
+          <p id="contact-number">(02) 4961 3303</p>
+        </div>
+      </div>
+      <div id="map"></div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+:root {
+  --main-green: rgb(104, 139, 88);
+  --main-white: rgb(253, 255, 252);
+  --main-grey: rgb(33, 26, 30);
+  --main-blue: rgb(46, 75, 97);
+  --dark-background: #18191a;
+  --light-background: rgb(36, 37, 38);
+  --border-grey: rgb(65, 65, 65);
+  --text-colour: rgb(228, 230, 235);
+}
+
+#navbar {
+  display: flex;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100vw;
+  background-color: var(--light-background);
+  justify-content: space-between;
+  margin-right: 2em;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border-grey);
+}
+
+#title {
+  font-size: 4em;
+  padding: 20px;
+  color: var(--text-colour);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-block-start: 0px;
+  margin-inline-start: 0px;
+  padding-inline-start: 0px;
+  margin-block-end: 0px;
+}
+
+.nav-links li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--main-white);
+  display: block;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: "Catamaran", sans-serif;
+  color: var(--text-colour);
+  background-color: rgb(33, 26, 30);
+}
+#main-area {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#pub-list-area {
+  background-color: #18191a;
+  width: 25%;
+  margin: 0;
+}
+
+#day-of-week {
+  color: var(--text-colour);
+  margin: 10px;
+  font-size: 2em;
+}
+
+.pub-list {
+  margin: 5px;
+}
+
+#pub-listing {
+  margin: 10px;
+  border-bottom: 1px solid var(--border-grey);
+  border-top: 1px solid var(--border-grey);
+}
+
+#name-and-deal-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 0;
+  width: 100%;
+  border: none;
+  line-height: 2;
+}
+
+#meal-and-price {
+  display: flex;
+  flex-direction: row;
+}
+
+#name {
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+
+#meal {
+  padding: 0;
+  margin: 5px;
+}
+
+#price {
+  padding: 0;
+  margin: 5px;
+}
+
+#address {
+  margin: 5px 0 5px 0;
+}
+
+#contact-number {
+  margin: 5px 0 5px 0;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
